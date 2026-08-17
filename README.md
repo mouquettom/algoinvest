@@ -1,61 +1,62 @@
-# OC_P7_AlgoInvest&Trade
+# AlgoInvest&Trade
 
-## Optimisez vos investissements avec AlgoInvest&Trade !
+## Optimized
 
-Dans le cadre du Projet 7 de la formation Développeur Python OpenClassrooms, nous avons 
-développé deux algorithmes puissants pour booster la rentabilité de portefeuilles financiers, 
-tout en respectant des contraintes strictes :
+A greedy approach inspired by the knapsack problem: it sorts the most
+profitable stocks and builds the ideal portfolio without exceeding the
+budget.
 
+------------------------------------------------------------------------
 
-    • Budget maximal : 500 €
+## Exploration Report
 
-    • Pas de fractions d’actions
+After verifying the accuracy of Sienna's calculations, it was found that
+her solution was not optimal. A new algorithm based on a greedy approach
+was developed, making it possible to obtain a more profitable solution
+in a shorter computation time, although without guaranteeing global
+optimality.
 
-    • Une seule acquisition par action
+------------------------------------------------------------------------
 
+## Prerequisites
 
-## Bruteforce
-Explore toutes les combinaisons possibles pour trouver le portefeuille parfait. Ultra-précis, 
-mais réservé aux petits datasets (20 actions maximum) sous peine d’exploser votre processeur !
+-   **Python 3** installed on your machine
+-   Internet connection
 
-## Optimisé
-Une approche gloutonne inspirée du problème du sac à dos : trie les actions les plus rentables 
-et construit le portefeuille idéal sans dépasser le budget.
+------------------------------------------------------------------------
 
-## Rapport d'exploration
-Après avoir vérifié l'exactitude des calculs de Sienna, il a été constaté que sa solution n'était 
-pas optimale. Un nouvel algorithme basé sur une approche gloutonne a été développé, permettant 
-d'obtenir une solution plus rentable dans un temps de calcul réduit, bien que sans garantir 
-l'optimalité globale.
+## Installation and Usage
 
-## Prérequis
+### 1. Clone the Project Repository
 
-- **Python 3** installé sur votre machine.
-- Connexion Internet
+Open a terminal, navigate to the directory of your choice, and clone the
+repository:
 
-## Installation et Lancement
+``` bash
+git clone https://github.com/mouquettom/algoinvest.git
+cd algoinvest
+```
 
-1. **Cloner le dépôt du projet :**
+### 2. Install the Packages
 
-    Lancez la console, placez-vous dans le dossier de votre choix et clonez le dépôt :
-    ```
-    • git clone https://github.com/mouquettom/OC_P7_AlgoInvest-Trade.git
-    ```
+``` bash
+pip install -r requirements.txt
+```
 
-3. **Installer les packages :**
+### 3. Run the Following Files
 
-    ```
-    • pip install -r requirements.txt
-    ```
-   
-3. **Lancer les fichiers suivants :**
+``` text
+bruteforce.py
+optimized.py
+correction_dataset_01_algo_glouton.py
+correction_dataset_02_algo_glouton.py
+```
 
-    ```
-    • bruteforce.py
-   
-    • optimized.py
-   
-    • correction_dataset_01_algo_glouton.py
-   
-    • correction_dataset_02_algo_glouton.py
-    ```
+------------------------------------------------------------------------
+
+## Author
+
+@tom_mouquet
+
+Project developed as part of the OpenClassrooms **Développeur
+d'application Python** training program.
