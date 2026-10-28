@@ -1,5 +1,12 @@
 # AlgoInvest&Trade
 
+## Brute Force
+
+Tests every possible combination of the 20 stocks (2^n combinations) and
+keeps the most profitable one that fits within the 500 € budget.
+
+------------------------------------------------------------------------
+
 ## Optimized
 
 A greedy approach inspired by the knapsack problem: it sorts the most
@@ -40,16 +47,18 @@ cd algoinvest
 ### 2. Install the Packages
 
 ``` bash
-pip install -r requirements.txt
+pip install -r tom_mouquet_3_diapositives_042025/requirements.txt
 ```
 
-### 3. Run the Following Files
+### 3. Run the Scripts
 
-``` text
-bruteforce.py
-optimized.py
-correction_dataset_01_algo_glouton.py
-correction_dataset_02_algo_glouton.py
+From the root of the repository:
+
+``` bash
+python tom_mouquet_1_bruteforce_042025/bruteforce.py
+python tom_mouquet_2_optimized_042025/optimized.py
+python tom_mouquet_3_diapositives_042025/correction_dataset_01_algo_glouton.py
+python tom_mouquet_3_diapositives_042025/correction_dataset_02_algo_glouton.py
 ```
 
 ------------------------------------------------------------------------
