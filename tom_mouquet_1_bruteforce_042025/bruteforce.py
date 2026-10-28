@@ -55,5 +55,5 @@ for mask in range(1 << n):
             meilleur_benefice = benefice_total
             meilleur_panier = panier_courant
 
-print("Meilleur bénéfice = ", meilleur_benefice)
+print("Meilleur bénéfice = ", round(meilleur_benefice, 2))
 print("Paniers d'actions optimal = ", meilleur_panier)

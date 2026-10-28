@@ -44,4 +44,4 @@ for nom in investissements:
 
 print(f"\nBudget utilisé : {round(budget_utilise, 2)} €")
 print(f"Bénéfice réalisé : {round(benefice_realise, 2)} €")
-print(f"Valeur total : {round(BUDGET_MAX + benefice_realise, 2)} €")
+print(f"Valeur totale : {round(BUDGET_MAX + benefice_realise, 2)} €")
