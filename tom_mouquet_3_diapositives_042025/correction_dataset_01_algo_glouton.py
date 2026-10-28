@@ -9,8 +9,9 @@ def selection_gloutonne(chemin_fichier, budget=500):
 
     Retourne une DataFrame des actions sélectionnées.
     """
-    # Chargement des données
+    # Chargement des données et filtre des prix valides (prix nuls ou négatifs exclus)
     donnees = pd.read_csv(chemin_fichier)
+    donnees = donnees[donnees['price'] > 0].copy()
 
     # Calcul du profit en euros et du ratio profit/prix
     donnees['profit_eur'] = donnees['price'] * donnees['profit'] / 100.0
